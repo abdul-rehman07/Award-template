@@ -1,28 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Award Template</title>
-    <style>
-.left{
-  border: 2px solid red;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Award Template</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    body {
+      font-family: 'Baloo 2', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      background-color: aliceblue;
+      height: 80px;
+      align-items: center;
+    }
+
+    .left {
+      display: flex;
+      flex: 1;
+      /* background-color: orange; */
+    }
+
+    .left img {
+      width: 70px;
+    }
+
+    .mid {
+      display: flex;
+      /* background-color: gray; */
+      align-items: center;
+      justify-content: center;
+      flex: 2;
+    }
+
+    .navbar {
+      display: flex;
+      list-style-type: none;
+      margin-right: 100px;
+
+    }
+
+    .navbar li {
+      margin: 0px -2px;
+      font-size: 15px;
+    }
+
+    .navbar li a {
+      padding: 0px 14px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .right {
+      display: flex;
+      /* background-color: yellow; */
+      flex: 1;
+      justify-content: end;
+
+    }
+
+    .btn {
+      margin: 14px 2px;
+      border-radius: 30px;
+      border: none;
+      background-color: rgb(255, 95, 121);
+      color: white;
+      padding: 14px 12px;
+
+    }
+
+    .texter {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .imges {
+      display: flex;
+
+
+    }
+
+    .imges img {
+      width: 18px;
+      height: 20px;
+      margin: 17px 8px;
+    }
+.cont{
+  display: flex;
+  border: 2px solid black;
+  height: 400px;
 }
-    </style>
+    .box1{
+      border: 2px solid yellow;
+      width: 50%;
+    }
+    .box2{
+      border: 2px solid blue;
+    }
+  </style>
 </head>
+
 <body>
-    <nav>
-<div class="container">
-  <div class="left">
-    I am left
+  <header>
+    <div class="container">
+      <div class="left">
+        <div>
+          <img src="img/ardmore_language_schools_limited_logo.png" alt="">
+        </div>
+        <div class="texter">
+          <div>
+            <h3 style="margin: 17px 8px;">ACCOUNTANT</h3>
+          </div>
+          <div>
+            <h3 style="margin: -13px 10px;">Online</h3>
+          </div>
+        </div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">STORIES</a></li>
+          <li><a href="#">GUIDES</a></li>
+          <li><a href="#">BLOGS</a></li>
+          <li><a href="#">EVENTS</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="imges">
+          <img src="img/telephone.png" alt="">
+          <img src="img/search-interface-symbol.png" alt="">
+          <img src="img/shopping-cart.png" alt="">
+          <img src="img/login.png" alt="">
+        </div>
+        <div>
+          <button class="btn">GET STARTED</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="cont">
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+      <img src="img/images.jfif" alt="">
+    </div>
   </div>
-  <div class="mid">
-    I am center
-  </div>
-  <div class="left">
-    I am right
-  </div>
-</div>
-    </nav>
 </body>
+
 </html>
