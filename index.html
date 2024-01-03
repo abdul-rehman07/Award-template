@@ -50,7 +50,7 @@
     }
 
     .navbar li a {
-      padding: 0px 14px;
+      padding: 0px 12px;
       color: black;
       text-decoration: none;
     }
@@ -89,18 +89,130 @@
       height: 20px;
       margin: 17px 8px;
     }
-.cont{
-  display: flex;
-  border: 2px solid black;
-  height: 400px;
-}
-    .box1{
-      border: 2px solid yellow;
+
+    .cont {
+      display: flex;
+      /* border: 2px solid black; */
+      height: 600px;
+
+    }
+
+    .box1 {
+      /* border: 2px solid rgb(255, 0, 0); */
       width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
-    .box2{
+
+    .heading {
+      margin-bottom: 25px;
+      margin-top: 100px;
+    }
+
+    .detail {
+      margin-bottom: 15px;
+    }
+
+    /* .box2 {
       border: 2px solid blue;
+    } */
+
+    .box2 img {
+      width: 600px;
     }
+
+    .styling {
+      display: flex;
+      margin-right: 2px;
+    }
+
+    .para p {
+      font-size: 50px;
+      margin: 0px;
+    }
+
+    .styling p {
+      font-size: 50px;
+      margin: 0px 9px 0px 0px;
+
+    }
+
+    .award-color {
+      color: rgb(255, 51, 85);
+    }
+
+    .imgstyle {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .imglogo1 img {
+      margin-right: 20px;
+      width: 165px;
+    }
+
+    .imglogo2 img {
+      margin-right: 0px;
+      width: 50px;
+    }
+
+    .imglogo4 img {
+      margin-right: 0px;
+      width: 50px;
+    }
+
+    .imglogo5 img {
+      margin-right: 20px;
+      width: 50px;
+    }
+
+    .imglogo3 img {
+      width: 130px;
+    }
+
+    .btn2 {
+      margin: 14px 2px;
+      border-radius: 30px;
+      border: none;
+      background: rgb(255, 51, 85);
+      color: black;
+      padding: 10px 28px;
+    }
+
+    .btn3 {
+      margin: 14px 2px;
+      border-radius: 30px;
+      border: 2px solid rgb(107, 105, 105);
+      background: transparent;
+      color: black;
+      padding: 10px 28px;
+    }
+    .bottom{
+      border: 2px solid black;
+      height: 300px;
+      display: flex;
+    }
+    .parabox1{
+      border: 2px solid blue;
+      position: absolute;
+      right: 0px;
+      width: 400px;
+    height: 200px;
+    }
+    .parabox2{
+     background-color: rgb(255, 132, 152);
+      /* border: 2px solid yellow; */
+    position: absolute;
+    right: 300px;
+    width: 400px;
+    height: 200px;
+    border-radius: 25px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 10px;
+}
   </style>
 </head>
 
@@ -145,12 +257,83 @@
   </header>
   <div class="cont">
     <div class="box1">
-
+      <div class="btnstyle">
+        <div class="logos">
+          <div class="start">
+            <div class="heading">
+              <div class="styling">
+                <div class="award-color">
+                  <p>Award-Winning</p>
+                </div>
+                <div>
+                  <p>Online</p>
+                </div>
+              </div>
+              <div class="para">
+                <p>Business Services</p>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="para2">
+                Online Chartered Accountancy firm helping
+              </div>
+              <div class="para2">
+                your business to launch,grow and thrive.
+              </div>
+            </div>
+          </div>
+          <div class="imgstyle">
+            <div class="imglogo1">
+              <img src="img/institute_logo.png" alt="">
+            </div>
+            <div class="imglogo2">
+              <img src="img/images.png" alt="">
+            </div>
+            <div class="imglogo4">
+              <img src="img/images.png" alt="">
+            </div>
+            <div class="imglogo5">
+              <img src="img/images.png" alt="">
+            </div>
+            <div class="imglogo3">
+              <img src="img/dublin-chamber-logo-7775E3A51E-seeklogo.com.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="btn2">Popular Services</button>
+          <button class="btn3">Get Started</button>
+        </div>
+      </div>
     </div>
     <div class="box2">
       <img src="img/images.jfif" alt="">
     </div>
   </div>
+
+
+
+
+  <div class="bottom">
+    <div class="parabox1">
+      <div class="package">
+
+      </div>
+      <div class="package">
+
+      </div>
+      <div class="package">
+
+      </div>
+    </div>
+    <div class="parabox2">
+<h2>Setting Up a Business</h2>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo praesentium reiciendis dolor velit placeat amet assumenda?</p>
+    </div>
+  </div>
+
+
+
 </body>
 
 </html>
