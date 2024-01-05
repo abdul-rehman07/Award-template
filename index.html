@@ -177,7 +177,7 @@
       border-radius: 30px;
       border: none;
       background: rgb(255, 51, 85);
-      color: black;
+      color: white;
       padding: 10px 28px;
     }
 
@@ -189,30 +189,73 @@
       color: black;
       padding: 10px 28px;
     }
-    .bottom{
-      border: 2px solid black;
+
+    .bottom {
+      /* border: 2px solid black; */
       height: 300px;
+      background-color: rgb(195, 255, 255);
       display: flex;
+      position: relative;
     }
-    .parabox1{
-      border: 2px solid blue;
+
+    .parabox1 {
+      display: flex;
+      /* border: 2px solid blue; */
       position: absolute;
-      right: 0px;
-      width: 400px;
-    height: 200px;
+top: -15px;
+      left: 220px;
+      width: 550px;
+      height: 180px;
+      border-radius: 25px;
+      background-color: white;
+      font-size: 14px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .parabox2{
-     background-color: rgb(255, 132, 152);
+
+    .parabox2 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      top: -15px;
+      font-size: 14px;
+      background-color: rgb(255, 132, 152);
       /* border: 2px solid yellow; */
-    position: absolute;
-    right: 300px;
-    width: 400px;
-    height: 200px;
-    border-radius: 25px;
-    padding-left: 38px;
-    padding-right: 38px;
-    padding-top: 10px;
-}
+      position: absolute;
+      right: 220px;
+      width: 250px;
+      height: 180px;
+      border-radius: 25px;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 10px;
+    }
+
+    .package1 {
+      word-wrap: break-word;
+      padding-left: 20px;
+    }
+
+    .package2 {
+      /* word-wrap: break-word; */
+      flex-wrap: wrap;
+      padding-left: 20px;
+      border-left: 2px solid rgb(182, 182, 182);
+    }
+
+    .package3 {
+      word-wrap: break-word;
+      padding-left: 20px;
+      border-left: 2px solid gray;
+    }
+    .info{
+      width: 1500px;
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    }
+     .info p{
+display: flex;
+justify-content: center;    
+margin: 40px 0px;  
+    } 
   </style>
 </head>
 
@@ -316,22 +359,31 @@
 
   <div class="bottom">
     <div class="parabox1">
-      <div class="package">
-
+      <div class="package1">
+        <h2>Setting Up a Business</h2>
+        <p>Lorem ipsum dolor sit ametpisicing elit. placeat amet assumenda?</p>
       </div>
-      <div class="package">
-
+      <div class="package2">
+        <h2>Setting Up a Business</h2>
+        <p>Lorem ipsum dolor sit ametpisicing elit. placeat amet assumenda?</p>
       </div>
-      <div class="package">
-
+      <div class="package3">
+        <h2>Setting Up a Business</h2>
+        <p>Lorem ipsum dolor sit ametpisicing elit. placeat amet assumenda?</p>
       </div>
     </div>
     <div class="parabox2">
-<h2>Setting Up a Business</h2>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo praesentium reiciendis dolor velit placeat amet assumenda?</p>
+      <h2>Setting Up a Business</h2>
+      <p>Lorem ipsum dolor sit amet praesentium reiciendis dolor velit placeat amet
+        assumenda?</p>
     </div>
-  </div>
+   
 
+     <div class="info">
+       <p>Not sure What you need? Tailor our services to suit your needs.</p>
+      </div>
+
+  </div>
 
 
 </body>
