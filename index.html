@@ -8,15 +8,19 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <style>
+    :root{
+      --primary-color: white;
+      --center: center;
+    }
     body {
       font-family: 'Baloo 2', sans-serif;
     }
 
     .container {
       display: flex;
-      background-color: aliceblue;
+      background-color: whitesmoke;
       height: 80px;
-      align-items: center;
+      align-items: var(--center);
     }
 
     .left {
@@ -32,8 +36,8 @@
     .mid {
       display: flex;
       /* background-color: gray; */
-      align-items: center;
-      justify-content: center;
+      align-items: var(--center);
+      justify-content: var(--center);
       flex: 2;
     }
 
@@ -68,7 +72,7 @@
       border-radius: 30px;
       border: none;
       background-color: rgb(255, 95, 121);
-      color: white;
+      color: var(--primary-color);
       padding: 14px 12px;
 
     }
@@ -101,8 +105,8 @@
       /* border: 2px solid rgb(255, 0, 0); */
       width: 50%;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: var(--center);
+      align-items: var(--center);
       flex-direction: column;
     }
 
@@ -177,7 +181,7 @@
       border-radius: 30px;
       border: none;
       background: rgb(255, 51, 85);
-      color: white;
+      color: var(--primary-color);
       padding: 10px 28px;
     }
 
@@ -202,12 +206,12 @@
       display: flex;
       /* border: 2px solid blue; */
       position: absolute;
-top: -15px;
+      top: -15px;
       left: 220px;
       width: 550px;
       height: 180px;
       border-radius: 25px;
-      background-color: white;
+      background-color: var(--primary-color);
       font-size: 14px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -245,17 +249,21 @@ top: -15px;
       padding-left: 20px;
       border-left: 2px solid gray;
     }
-    .info{
+
+    .info {
       width: 1500px;
-    align-items: end;
-    display: flex;
-    justify-content: center;
+      align-items: end;
+      display: flex;
+      justify-content: var(--center);
     }
-     .info p{
-display: flex;
-justify-content: center;    
-margin: 40px 0px;  
-    } 
+
+    .info p {
+      display: flex;
+      justify-content: var(--center);
+      margin: 40px 0px;
+    }
+
+ 
   </style>
 </head>
 
@@ -377,11 +385,11 @@ margin: 40px 0px;
       <p>Lorem ipsum dolor sit amet praesentium reiciendis dolor velit placeat amet
         assumenda?</p>
     </div>
-   
 
-     <div class="info">
-       <p>Not sure What you need? Tailor our services to suit your needs.</p>
-      </div>
+
+    <div class="info">
+      <p>Not sure What you need? Tailor our services to suit your needs.</p>
+    </div>
 
   </div>
 
